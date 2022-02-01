@@ -1,0 +1,359 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    display: flex;
+}
+
+/* Navigation */
+.side-bar {
+    height: 100vh;
+    padding-top: 30px;
+    padding-left: 36px;
+    padding-right: 36px;
+    color: white;
+    overflow: auto;
+    background-color: #071538;
+    scrollbar-width: none;
+}
+
+h1 {
+    font-size: 3.3rem;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+.bloc-analogie {
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 11px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    max-width: 206px;
+    min-height: 53.5px;
+    margin: 24px 0;
+    color: #071538;
+    transition: 0.4s ease;
+}
+
+.bloc-analogie h2 {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bloc-analogie:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.button-ville:hover {
+    background: linear-gradient(109.61deg, #E43A3A 15.66%, #680A0A 90.77%);
+}
+
+.button-musique:hover {
+    background: linear-gradient(109.61deg, #4919B0 15.66%, #1F0643 90.77%);
+}
+
+.button-animal:hover {
+    background: linear-gradient(109.61deg, #179E62 15.66%, #153E06 90.77%);
+
+}
+
+.button-film:hover {
+    background: linear-gradient(109.61deg, #2E8CCF 15.66%, #09355C 90.77%);
+}
+
+.button-plat:hover {
+    background: linear-gradient(109.61deg, #EA974A 15.66%, #BF5214 90.77%);
+
+}
+
+.button-personnage:hover {
+    background: linear-gradient(109.61deg, #2C3DD1 15.66%, #0C0749 90.77%);
+}
+
+.button-voiture:hover {
+    background: linear-gradient(109.61deg, #BC2D9D 15.66%, #560757 90.77%);
+
+}
+
+.button-personnalise-defaut {
+    background: linear-gradient(93.5deg, #3519E2 0%, #680C77 50%, #BA0000 100%);
+    color: white;
+}
+
+.button-personnalise-defaut:hover {
+    background: linear-gradient(93.5deg, #BA0000 0%, #680C77 50%, #3519E2 100%);
+}
+
+/* Volet déroulant des mentions légales */
+
+h3 {
+    margin: 0 0 8px 0;
+}
+
+footer p {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+a {
+   color: #acb3c5; 
+}
+
+h4 {
+    margin: 16px 0 8px 0;
+}
+
+footer {
+    margin-top: 36px;
+    padding-bottom: 30px;
+    width: 200px;
+}
+
+
+.volet-invisible {
+    height: 2em;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.volet-visible {
+    height: 37em;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* Contenu */
+
+main {
+    height: 100vh;
+    color: white;
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+}
+
+img {
+    max-width: 30vw;
+    max-height: 60vh;
+    object-fit: cover;
+    margin: 30px 30px 20px 0;
+    float: left;
+    border-radius: 3px;
+}
+
+.reponse {
+    margin: auto;
+}
+
+main>p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+main h2 {
+    margin-top: 40px;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.defaut {
+    color: #071538;
+    padding: 8px;
+}
+
+.info-drop {
+    height: 100%;
+    width: 100%;
+    border: 4px dashed #6A7BA7;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.info-drop img {
+    height: 25vh;
+    margin: 0;
+    transition: 0.2s ease;
+
+}
+
+.info-drop:hover {
+    background-color: #EBEFFB;
+    border: 4px dashed #071538;
+}
+
+.info-drop:hover img {
+    height: 35vh;
+}
+
+.ville {
+    background: linear-gradient(109.61deg, #E43A3A 15.66%, #680A0A 90.77%);
+}
+
+.musique {
+    background: linear-gradient(109.61deg, #4919B0 15.66%, #1F0643 90.77%);
+}
+
+.animal {
+    background: linear-gradient(109.61deg, #179E62 15.66%, #153E06 90.77%);
+
+
+}
+
+.film {
+    background: linear-gradient(109.61deg, #2E8CCF 15.66%, #09355C 90.77%);
+}
+
+.plat {
+    background: linear-gradient(109.61deg, #EA974A 15.66%, #BF5214 90.77%);
+
+}
+
+.personnage {
+    background: linear-gradient(109.61deg, #2C3DD1 15.66%, #0C0749 90.77%);
+}
+
+.voiture {
+    background: linear-gradient(109.61deg, #BC2D9D 15.66%, #560757 90.77%);
+
+}
+
+.personnalise-suggeree {
+    background: linear-gradient(93.5deg, #3519E2 0%, #680C77 50%, #BA0000 100%);
+}
+
+/* Formulaire */
+
+.personnalise-defaut {
+    color: #071538;
+    display: flex;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.personnalise-defaut h1 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.champ {
+    margin: 24px 0;
+}
+
+::placeholder {
+    color: #B7B7B7;
+}
+
+input[type=text],
+textarea {
+    color: #071538;
+    padding: 0 8px;
+    background-color: #F5F5F5;
+    border-radius: 10px;
+    border: none;
+    height: 36px;
+    margin: 10px 0 5px 0;
+    border-radius: 3px;
+    width: 50vw;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+input[type=text]:hover,
+textarea:hover {
+    background-color: #EBEBEB;
+}
+
+textarea {
+    padding: 8px 8px;
+    resize: none;
+    height: 25vh;
+}
+
+input[type=button] {
+    font-size: 1.2rem;
+    width: 50vw;
+    border-radius: 5px;
+    padding: 14px 0;
+    border: none;
+    background-color: #071538;
+    color: white;
+    margin-bottom: 10px;
+}
+
+input[type=button]:hover {
+    background: linear-gradient(93.5deg, #BA0000 0%, #680C77 50%, #3519E2 100%);
+    transition: ease;
+    cursor: pointer;
+}
+
+abbr[title=obligatoire] {
+    color: #D84040;
+    text-decoration: none;
+}
+
+.alert {
+    color: #D84040;
+    font-weight: 400;
+    display: none;
+}
+
+.erreur~.alert {
+    display: inline;
+}
+
+input.erreur:invalid, textarea.erreur:invalid {
+    border: solid 1px red;
+}
+
+form section
+ {
+    width: 50vw;
+}
+
+.accord {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
